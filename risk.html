@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Risk Game</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h2>Risk Game</h2>
+<button onclick="safe()">Safe</button>
+<button onclick="risk()">Risk</button>
+<p id="res"></p>
+<script>
+function safe(){document.getElementById("res").innerText="Safe +10 points";}
+function risk(){document.getElementById("res").innerText=Math.random()>0.5?"Win +25":"Lose";}
+</script>
+</body>
+</html>
